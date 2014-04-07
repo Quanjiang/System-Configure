@@ -1,0 +1,2 @@
+echo Copy configure file to Home direct.
+find ../arch-config/linux -maxdepth 2 -exec cp {} ~/ \;
