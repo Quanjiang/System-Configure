@@ -1,22 +1,23 @@
 System-Configure
 ================
 WHAT IS SYSTEM-CONFIGURE?
-	 System-configure is a git solution for git the configure file of system.Such as linux ,windows and so on. I find the paper from here :http://baohaojun.github.io/blog/2012/10/22/my-config-cn.html. This paper talk about function used factury model for general each configure file on each platform(linux ,windows or mac). I think this is a  betty way for reinstall the operating system. So i build this git repository for achieve this idear. But I'm new for bash coding,the repository here is uncompleted.
+	 System-configure is a git solution for git the configure file of system.Such as linux ,windows and so on. I find the paper from here :http://baohaojun.github.io/blog/2012/10/22/my-config-cn.html. 
+	 This paper talk about function used factury model for general each configure file on each platform(linux ,windows or mac). I think this is a  betty way for reinstall the operating system. So i build this git repository for achieve this idear. But I'm new for bash coding,the repository here is uncompleted.
 	 If you want use this git repository,you should look before you leap.	 
 
 ON WHAT SITUATION DOES IT RUN?
    
 	When you want reinstall your operating system or install your favorite os on new hardware. This repository will help!
 
-   	HARDWARE REQUIREMENTS:
+HARDWARE REQUIREMENTS:
 			 You can use this in any hardware with system like linux or windows. You need make true that system had bash or other sh program for run .sh file for deploy configure file automatic.
 
-	SOFTWARE REQUIREMENTS:
+SOFTWARE REQUIREMENTS:
 			 As above said,the bash or other program like it must need ! 
 
 DOCUMENTATION:
 
-		HOW TO USE:
+HOW TO USE:
 
 			1 get the repository:
 
@@ -44,7 +45,7 @@ DOCUMENTATION:
 			     
 				   		 
 
-		HOW TO MAKE YOUR OWN ONE:
+HOW TO MAKE YOUR OWN ONE:
 
 			1 Maybe you could copy bin/ directry into your own repository.
 
@@ -64,7 +65,7 @@ CONNECT ME:
 		You can just leav message on github or send me email quanjiang.gu<<a>>foxmail.com
 
 
-			Thank you for reading! Good Luck every day !
+		Thank you for reading! Good Luck every day !
 
                                                           2014.4.7
 
