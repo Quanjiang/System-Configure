@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<compiz_session id="10ef11eb114d72cfa0138458369426809200000019750033">
+  <window id="10ef11eb114d72cfa0138458388221784100000019750038" title="14$(B9M8&amp;1Q$(ASo4J;c$(B@:$(A=2$(BB.$(A&lt;G$(BBhFsItJ,(B 010.avi" class="Totem" name="totem" command="totem">
+    <geometry x="294" y="100" width="712" height="549"/>
+    <workspace index="0"/>
+  </window>
+  <window id="10ef11eb114d72cfa0138458385521378100000019750036" title="Terminal" class="Gnome-terminal" name="gnome-terminal" role="gnome-terminal-window-2869--1806789671-1384584476" command="gnome-terminal">
+    <geometry x="876" y="437" width="722" height="434"/>
+    <workspace index="0"/>
+  </window>
+  <window id="10ef11eb114d72cfa0138458385521378100000019750036" title="Terminal" class="Gnome-terminal" name="gnome-terminal" role="gnome-terminal-window-2869--940493838-1384583855" command="gnome-terminal">
+    <geometry x="876" y="24" width="722" height="434"/>
+    <workspace index="0"/>
+  </window>
+  <window id="10ef11eb114d72cfa0138458433121473300000019750048" title="StarDict" class="Stardict" name="stardict" command="stardict">
+    <geometry x="522" y="269" width="555" height="361"/>
+    <workspace index="0"/>
+  </window>
+  <window id="10ef11eb114d72cfa0138458385521378100000019750036" title="root@studentol-ThinkPad-T420: /home/studentol" class="Gnome-terminal" name="gnome-terminal" role="gnome-terminal-window-2869--843754942-1384584942" command="gnome-terminal">
+    <geometry x="841" y="357" width="722" height="434"/>
+    <workspace index="0"/>
+  </window>
+</compiz_session>
