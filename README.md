@@ -17,7 +17,7 @@ If you want use this git repository,you should look before you leap.</p>
 <h2 style="text-align: left;">DOCUMENTATION:</h2>
 <h3 style="text-align: left;">  HOW TO USE:</h3>
 <h4 style="text-align: left;">      1 get the repository:</h4>
-#git clone https://github.com/Quanjiang/System-Configure
+<p style="text-align: left;">           #git clone https://github.com/Quanjiang/System-Configure</p>
 <h4>      2 run script in bin directory for deploy configure file:</h4>
 <p style="text-align: left;">           #./YOUR_GIT_PATH/System-Configure/bin/Deploy-setting-file</p>
 
