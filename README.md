@@ -24,16 +24,15 @@ DOCUMENTATION:
 #### 1 get the repository:
 	 #git clone https://github.com/Quanjiang/System-Configure
 #### 2 run script in bin directory for deploy configure file:
-	  #./YOUR_GIT_PATH/System-Configure/bin/Deploy-setting-file
+	  #./YOUR_GIT_PATH/System-Configure/bin/deploy-auto.sh -r listfile
+      ps: you need edit listfile. more detail see listfile
 #### 3 Now enjoy it !
 #### 4 Update your configure to System-Configure: 
-	 #./YOUR_GIT_PATH/System-Configure/bin/Update-setting-file
-
-               ps: in this way you only update configure that in the System-configure already! if                          you need update new file into the project. you need copy the file into the System-Configure. and run Update-setting-file again.
+	 #./YOUR_GIT_PATH/System-Configure/bin/deploy-auto.sh -b listfile
+     ps: you need add file path into listfile before update!
 ####  5 Update to git or other cvs:
 	   #./YOUR_GIT_PATH/System-Configure/bin/Push-to-Git
-
-                ps:here only had git sh for update to github. If you want to update cvs or other thing. You need write it by your self!
+       ps:here only had git sh for update to github. If you want to update cvs or other thing. You need write it by your self!
 ### HOW TO MAKE YOUR OWN ONE:
 
 #### 1 Maybe you could copy bin/ directry into your own repository.
@@ -52,4 +51,5 @@ CONNECT ME:
 -----------------------------------
 You can just leav message on github or send me email quanjiang.gu<<a>>foxmail.com Thank you for reading! Good Luck every day !
 
+2014.4.30(new)
 2014.4.7
