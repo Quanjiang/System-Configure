@@ -1,0 +1,5 @@
+deploy-auto.sh -b listfile
+git status
+git add --all
+git commit -m "update"
+git push
