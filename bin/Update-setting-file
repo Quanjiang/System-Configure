@@ -1,2 +1,0 @@
-find ../arch-config/linux -maxdepth 2 -exec echo{} \;
-

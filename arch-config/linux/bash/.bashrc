@@ -104,3 +104,6 @@ PS1="\[\033[0;32m\]\A \[\033[0;31m\]\u\[\033[0;34m\]@\[\033[0;35m\]\h\[\033[0;34
 # export GTK_IM_MODULE=ibus
  #  export XMODIFIERS=@im=ibus
   #   export QT_IM_MODULE=ibus
+
+setxkbmap -option ctrl:swapcaps
+#xmodmap ~/.xmodmap
