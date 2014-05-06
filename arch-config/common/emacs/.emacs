@@ -10,6 +10,9 @@
 ;  global-map  
 ;  `(("C-x G p" goto-my-projects-dir))))   
 
+(set-language-environment 'Chinese-GB)
+(setq-default pathname-coding-system 'euc-cn)
+(setq file-name-coding-system 'euc-cn)
 
 ;(setq default-directory "C:/WINCE600/PLATFORM/BSP_DP/SRC") 
 (setq default-directory "~/cepath/BSP_DP/SRC")
@@ -84,7 +87,7 @@
 (setq kill-ring-max 200);;设置kill-ring-max(我不知道怎么翻译这个词：)为200，以防不测：）
 (setq default-major-mode 'text-mode);;设置缺省模式是text，而不是基本模式
 ;;设置tab为4个空格的宽度，而不是原来的2
-(setq default-tab-width 4)
+;(setq default-tab-width 4)
 ;;;;;;;;;;;;;;;;;启动时最大化;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 (require 'maxframe)
 (add-hook 'window-setup-hook 'maximize-frame t)
@@ -102,9 +105,12 @@
 
 ;;=============================================================================
 ;;;c/c++ mode open
+
 (require 'cc-mode)
 (setq-default c-basic-offset 4 c-default-style "linux")
-(setq-default tab-width 4 indent-tabs-mode t)
+;(c-set-style "K&R")
+(setq c-basic-offset 8)
+(setq-default tab-width 8 indent-tabs-mode t)
 (define-key c-mode-base-map (kbd "RET") 'newline-and-indent)
 ;;; autopair for add the closing bracket
 (require 'autopair)
