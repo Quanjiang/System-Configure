@@ -45,7 +45,7 @@
 (when (not package-archive-contents)
   (package-refresh-contents))
 (defvar tmtxt/packages
-  '(xcscope psvn lineno maxframe color-theme ecb autopair auto-complete auto-complete-clang member-function yasnippet))
+  '(php-mode geben xcscope psvn lineno maxframe color-theme ecb autopair auto-complete auto-complete-clang member-function yasnippet))
 (dolist (p tmtxt/packages)
   (when (not (package-installed-p p))
     (package-install p)))
@@ -781,3 +781,10 @@ X")))
 ;; ac-source-gtags  
 (my-ac-config)  
 
+
+;;=============================================================================
+;;php
+(require 'geben)
+(require 'php-mode)  
+(add-hook 'php-mode-user-hook 'turn-on-font-lock)
+;;=============================================================================
