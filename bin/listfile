@@ -7,4 +7,5 @@ Emacs-set2 ./.emacs.d  ./System-Configure/arch-config/common/emacs/.emacs.d
 Bashrc-set ./.bashrc  ./System-Configure/arch-config/linux/bash/.bashrc
 zshrc-set ./.zshrc  ./System-Configure/arch-config/linux/bash/.zshrc
 Bash_profile-set ./.bash_profile  ./System-Configure/arch-config/linux/bash/.bash_profile
-
+Vimrc ./.vimrc ./System-Configure/arch-config/linux/vim/.vimrc
+Vim ./.vim ./System-Configure/arch-config/linux/vim/.vim
