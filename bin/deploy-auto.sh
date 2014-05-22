@@ -49,7 +49,7 @@ do
 					echo Install Archlinux package!
 					echo Install commo Program!
 					pacman -Syu
-					pacman -S ibus-googlepinyin vim emacs goagent chromium
+					pacman -S ibus-googlepinyin vim emacs goagent chromium openssh ibus tigervnc minicom
 					exit
 					;;
 				*)
