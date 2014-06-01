@@ -46,10 +46,10 @@ You can rewrite files in bin directry as you like.
 IF SOMETHING GOES WRONG:
 -----------------------------------
 Now Some important function is not work! I'm complete it now !
+You must name directory with System-Configure. The script will error when directory name wrong!
 
 CONNECT ME:
 -----------------------------------
 You can just leav message on github or send me email quanjiang.gu<<a>>foxmail.com Thank you for reading! Good Luck every day !
 
-2014.4.30(new)
-2014.4.7
+2014.6.1
