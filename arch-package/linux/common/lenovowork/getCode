@@ -1,0 +1,3 @@
+product=$1
+scp l2plclient@10.186.204.215:/code_up/linux_dfcxact/product/${1%%-*}/$1 .
+#scp plclient@9.186.204.125:/home/plclient/rtprsync/pp/product/${1::4}/$1 .

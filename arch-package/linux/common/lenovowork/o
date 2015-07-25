@@ -1,0 +1,11 @@
+USERNAME="l2plclient"
+IP="10.186.204."
+case $1 in
+     125)
+	USERNAME="plclient"
+	;;
+esac
+IP=${IP}${1}
+mypwd="L2client"
+#ssh $USERNAME@$IP
+sshnopassword $IP $USERNAME $mypwd

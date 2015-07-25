@@ -1,0 +1,6 @@
+product=$1
+scp l2plclient@10.240.48.116:/dfcxact/product/${1%%-*}/trunk/$1 .
+scp ./$1 l2plclient@10.186.204.62:/dfcxact/product/${1%%-*}/
+scp ./$1 l2plclient@10.186.204.217:/dfcxact/product/${1%%-*}/
+scp ./$1 l2plclient@10.186.204.207:/dfcxact/product/${1%%-*}/
+#scp plclient@9.186.204.125:/home/plclient/rtprsync/pp/product/${1::4}/$1 .
