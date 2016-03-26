@@ -14,12 +14,17 @@
 (setq-default pathname-coding-system 'euc-cn)
 (setq file-name-coding-system 'euc-cn)
 
+
+
+
 ;(setq default-directory "C:/WINCE600/PLATFORM/BSP_DP/SRC") 
-(setq default-directory "~/cepath/BSP_DP/SRC")
+(setq default-directory "~/mywork")
 ;; C-SPACE 被输入法占用，C-@ 又太难按，于是把 set mark 绑定到 C-return
 (define-key global-map [C-return] 'set-mark-command)
 (global-set-key (kbd "C-M-x") 'kill-buffer-and-window);;关闭buffer快捷建
 (delete-selection-mode 1);;选择后 可以直接删除
+
+
 
 ;;=============================================================================
 ;;; Emacs is not a package manager, and here we load its package manager!
@@ -50,7 +55,8 @@
   (when (not (package-installed-p p))
     (package-install p)))
 ;;=============================================================================
-
+(setq column-number-mode t) ;;; 显示列号
+(setq frame-title-format "%f")
 
 ;;=============================================================================
 ;;;svn support
@@ -82,7 +88,7 @@
 (setq auto-save-mode nil);关闭自动保存模式
 (setq auto-save-default nil);不生成名为#filename# 的临时文件
 ;(setq require-final-newline t);; 自动的在当前的buffer文件的最后加一个空行
-;(global-set-key "\r" 'align-newline-and-indent);;自动缩进变为
+0;(global-set-key "\r" 'align-newline-and-indent);;自动缩进变为
 (setq default-fill-column 110);设置默认的列数是110
 (setq kill-ring-max 200);;设置kill-ring-max(我不知道怎么翻译这个词：)为200，以防不测：）
 (setq default-major-mode 'text-mode);;设置缺省模式是text，而不是基本模式
@@ -828,3 +834,7 @@ X")))
                                        filename))
                 (setq indent-tabs-mode t)
                 (c-set-style "linux-tabs-only")))))
+
+
+(require 'cua-rect)
+

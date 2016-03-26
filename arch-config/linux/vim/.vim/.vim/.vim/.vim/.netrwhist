@@ -1,0 +1,6 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =4
+let g:netrw_dirhist_1='/opt/svn/123/usb_burnRom/light3'
+let g:netrw_dirhist_2='/opt/svn/123/usb_burnRom'
+let g:netrw_dirhist_3='/opt/svn/123'
+let g:netrw_dirhist_4='/opt/svn'

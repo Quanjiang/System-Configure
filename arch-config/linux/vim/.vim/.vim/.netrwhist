@@ -1,6 +1,5 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =4
-let g:netrw_dirhist_1='/opt/svn/123/usb_burnRom/light3'
-let g:netrw_dirhist_2='/opt/svn/123/usb_burnRom'
-let g:netrw_dirhist_3='/opt/svn/123'
-let g:netrw_dirhist_4='/opt/svn'
+let g:netrw_dirhist_cnt =3
+let g:netrw_dirhist_1='/etc/shadowsocks'
+let g:netrw_dirhist_2='/mnt/tmp/source/gcc-build'
+let g:netrw_dirhist_3='/usr/local/lib/python2.7/dist-packages/shadowsocks-2.6.12-py2.7.egg/shadowsocks'

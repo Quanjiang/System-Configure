@@ -1,11 +1,9 @@
 ;;; geben-autoloads.el --- automatically extracted autoloads
 ;;
 ;;; Code:
-
+(add-to-list 'load-path (or (file-name-directory #$) (car load-path)))
 
-;;;### (autoloads (dbgp-proxy-unregister-exec dbgp-proxy-unregister
-;;;;;;  dbgp-proxy-register-exec dbgp-proxy-register dbgp-exec dbgp-start)
-;;;;;;  "dbgp" "dbgp.el" (21361 39947 30643 525000))
+;;;### (autoloads nil "dbgp" "dbgp.el" (21939 26748 203106 165000))
 ;;; Generated autoloads from dbgp.el
 
 (autoload 'dbgp-start "dbgp" "\
@@ -48,8 +46,7 @@ After unregistration, it kills the listener instance.
 
 ;;;***
 
-;;;### (autoloads (geben geben-mode) "geben" "geben.el" (21361 39946
-;;;;;;  907308 918000))
+;;;### (autoloads nil "geben" "geben.el" (21939 26748 195106 165000))
 ;;; Generated autoloads from geben.el
 
 (autoload 'geben-mode "geben" "\
@@ -97,15 +94,13 @@ described its help page.
 
 ;;;***
 
-;;;### (autoloads nil nil ("geben-pkg.el") (21361 39947 179745 268000))
+;;;### (autoloads nil nil ("geben-pkg.el") (21939 26748 229024 843000))
 
 ;;;***
 
-(provide 'geben-autoloads)
 ;; Local Variables:
 ;; version-control: never
 ;; no-byte-compile: t
 ;; no-update-autoloads: t
-;; coding: utf-8
 ;; End:
 ;;; geben-autoloads.el ends here
