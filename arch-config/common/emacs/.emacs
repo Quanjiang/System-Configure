@@ -261,7 +261,7 @@
 (define-key global-map [(ctrl f4)] 'cscope-unset-initial-directory)
 ;(define-key global-map [(ctrl f5)] 'cscope-prev-file)
 ;(define-key global-map [(ctrl f6)] 'cscope-find-global-definition)
-(define-key global-map [(ctrl f9)]
+(define-key global-map (kbd "C-x 9")
 'cscope-find-global-definition-no-prompting)
 ;(define-key global-map [(ctrl f8)] 'cscope-pop-mark)
 ;(define-key global-map [(ctrl f9)] 'cscope-next-symbol)
