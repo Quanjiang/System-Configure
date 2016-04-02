@@ -152,6 +152,8 @@
 (global-set-key (kbd "C-@") 'ecb-goto-window-sources)
 (global-set-key (kbd "C-#") 'ecb-goto-window-methods)
 (global-set-key (kbd "C-$") 'ecb-goto-window-compilation)
+(global-set-key (kbd "C-%") 'ecb-goto-window-history)
+
 ;;; replacement for built-in ecb-deactive, ecb-hide-ecb-windows and
 ;;; ecb-show-ecb-windows functions
 ;;; since they hide/deactive ecb but not restore the old windows for me
@@ -201,6 +203,8 @@
 (define-key c++-mode-map (kbd "C-S-<return>") 'ac-complete-clang)
 ;; replace C-S-<return> with a key binding that you want
 
+(setq ecb-fix-window-size t)
+
 (require 'member-function)
 (setq mf--source-file-extension "cpp")
 (custom-set-variables
@@ -208,7 +212,7 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(ecb-layout-window-sizes (quote (("leftright2" (ecb-directories-buffer-name 0.1631578947368421 . 0.4864864864864865) (ecb-sources-buffer-name 0.1631578947368421 . 0.43243243243243246) (ecb-methods-buffer-name 0.14736842105263157 . 0.4864864864864865) (ecb-history-buffer-name 0.14736842105263157 . 0.43243243243243246)))))
+ '(ecb-layout-window-sizes (quote (("leftright2" (ecb-directories-buffer-name 0.1631578947368421 . 0.4864864864864865) (ecb-sources-buffer-name 0.1631578947368421 . 0.43243243243243246) (ecb-methods-buffer-name 0.14736842105263157 . 0.4864864864864865) (ecb-history-buffer-name 0.14736842105263157 . 0.43243243243243246) ))))
  '(ecb-options-version "2.40")
  '(ecb-primary-secondary-mouse-buttons (quote mouse-1--mouse-2)))
 (custom-set-faces
@@ -217,6 +221,39 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  )
+
+
+;; cscope 移动位置
+;; (ecb-layout-define "my-cscope-layout" left nil
+;;                    (ecb-set-methods-buffer)
+;;                    (ecb-split-ver 0.5 t)
+;;                    (other-window 1)
+;;                    (ecb-set-history-buffer)
+;;                    (ecb-split-ver 0.25 t)
+;;                    (other-window 1)
+;;                    (ecb-set-cscope-buffer))
+
+;; (defconst ecb-examples-action-buffer-name "*cscope*")
+;; (defun ecb-examples-action-buffer-create ()
+;;      (save-excursion
+;;        (if (get-buffer ecb-examples-action-buffer-name)
+;;            (get-buffer ecb-examples-action-buffer-name)
+   
+;;          (set-buffer (get-buffer-create
+;;                        ecb-examples-action-buffer-name))
+;;          (current-buffer))))
+
+
+;; (defecb-window-dedicator-to-ecb-buffer ecb-set-cscope-buffer
+;;        ecb-examples-action-buffer-name nil
+;;      "Set the buffer in the current window to the action-buffer
+;;    and make this window dedicated for this buffer."
+;;      (switch-to-buffer (ecb-examples-action-buffer-create)))
+
+;; (setq ecb-layout-name "my-cscope-layout")
+
+;; ;; Disable buckets so that history buffer can display more entries
+;; (setq ecb-history-make-buckets 'never)
 
 ;;cscope
 (require 'xcscope)
@@ -838,3 +875,15 @@ X")))
 
 (require 'cua-rect)
 
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(ecb-options-version "2.40"))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )
