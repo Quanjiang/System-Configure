@@ -1,5 +1,7 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =3
+let g:netrw_dirhist_cnt =5
 let g:netrw_dirhist_1='/etc/shadowsocks'
 let g:netrw_dirhist_2='/mnt/tmp/source/gcc-build'
 let g:netrw_dirhist_3='/usr/local/lib/python2.7/dist-packages/shadowsocks-2.6.12-py2.7.egg/shadowsocks'
+let g:netrw_dirhist_4='/home/maidi/mywork/Apple/RedFish/plug-in/IssueMonitor'
+let g:netrw_dirhist_5='/usr/share/X11/xorg.conf.d'

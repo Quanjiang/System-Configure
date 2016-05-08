@@ -60,7 +60,7 @@
 
 ;;=============================================================================
 ;;;svn support
-(require 'psvn)
+;; (require 'psvn)
 ;;;emacs color theme
 (require 'color-theme)
 (color-theme-initialize)
@@ -331,16 +331,16 @@
 
 
 ;; 设置 calendar 的显示
-(setq calendar-remove-frame-by-deleting t)
-(setq calendar-week-start-day 1);; 设置星期一为每周的第一天
-(setq mark-diary-entries-in-calendar t);; 标记calendar上有diary的日期
-(setq mark-holidays-in-calendar nil); ; 为了突出有diary的日期，calendar上不标记节日
-(setq view-calendar-holidays-initially nil) ; 打开calendar的时候不显示一堆节日
-;; 去掉不关心的节日，设定自己在意的节日，在 calendar 上用 h 显示节日
-(setq christian-holidays nil)
-(setq hebrew-holidays nil)
-(setq islamic-holidays nil)
-(setq solar-holidays nil)
+;; (setq calendar-remove-frame-by-deleting t)
+;; (setq calendar-week-start-day 1);; 设置星期一为每周的第一天
+;; (setq mark-diary-entries-in-calendar t);; 标记calendar上有diary的日期
+;; (setq mark-holidays-in-calendar nil); ; 为了突出有diary的日期，calendar上不标记节日
+;; (setq view-calendar-holidays-initially nil) ; 打开calendar的时候不显示一堆节日
+;; ;; 去掉不关心的节日，设定自己在意的节日，在 calendar 上用 h 显示节日
+;; (setq christian-holidays nil)
+;; (setq hebrew-holidays nil)
+;; (setq islamic-holidays nil)
+;; (setq solar-holidays nil)
 ;;Calendar模式支持各种方式来更改当前日期
 ;;（这里的“前”是指还没有到来的那一天，“后”是指已经过去的日子）
 ;;  q      退出calendar模式
@@ -838,9 +838,9 @@ X")))
 
 ;;=============================================================================
 ;;php
-(require 'geben)
-(require 'php-mode)  
-(add-hook 'php-mode-user-hook 'turn-on-font-lock)
+;; (require 'geben)
+;; (require 'php-mode)  
+;; (add-hook 'php-mode-user-hook 'turn-on-font-lock)
 ;;=============================================================================
 
 (defun c-lineup-arglist-tabs-only (ignored)
