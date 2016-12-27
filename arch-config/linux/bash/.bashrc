@@ -1,7 +1,7 @@
 # ~/.bashrc: executed by bash(1) for non-login shells.
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
-
+#source /etc/profile
 # If not running interactively, don't do anything
 [ -z "$PS1" ] && return
 
@@ -105,5 +105,19 @@ PS1="\[\033[0;32m\]\A \[\033[0;31m\]\u\[\033[0;34m\]@\[\033[0;35m\]\h\[\033[0;34
  #  export XMODIFIERS=@im=ibus
   #   export QT_IM_MODULE=ibus
 
-setxkbmap -option ctrl:swapcaps
+#setxkbmap -option ctrl:swapcaps
 #xmodmap ~/.xmodmap
+
+tmux_init()
+{
+	    tmux new-session -s "kumu" -d -n "local"    # 开启一个会话
+        tmux new-window -n "other"          # 开启一个窗口
+#    tmux split-window -h                # 开启一个竖屏
+#					    tmux split-window -v "top"          # 开启一个横屏,并执行top命令
+        tmux -2 attach-session -d           # tmux -2强制启用256color，连接已开启的tmux
+}
+
+# 判断是否已有开启的tmux会话，没有则开启
+if which tmux 2>&1 >/dev/null; then
+    test -z "$TMUX" && (tmux attach || tmux_init)
+fi
